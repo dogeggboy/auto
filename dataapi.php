@@ -32,7 +32,10 @@ function send_post($url, $post_data) {
 
 //使用方法
 $post_data = array(
-    'username' => 'stclair2201',
-    'password' => 'handan'
+    'username' => 'wizardqt',
+    'password' => 'wscaomin2',
+    'grant_type' => 'password'
 );
-send_post('http://www.qianyunlai.com', $post_data);
+
+$token = send_post('http://dataapi.bazhuayu.com/token', $post_data);
+
